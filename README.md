@@ -2,6 +2,8 @@
 
 ```cp .env.example .env``` - в папке src генерируем файл .env
 
+```docker-compose run artisan key:generate``` - генерируем ключ
+
 ```docker-compose up -d``` - запуск контейнеров
 
 ```docker-compose run composer install``` - устанавка зависимостей
@@ -15,8 +17,6 @@
 ---
 **API**
 
-Для запросов используется Bearer Token
-
 **Авторизация**
 
 ```
@@ -27,6 +27,8 @@ Request:
     "password": "password"
 }
 ```
+
+**Дальше для запросов используется Bearer Token**
 
 **Выход из системы**
 

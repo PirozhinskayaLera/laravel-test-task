@@ -87,7 +87,7 @@ class Courier extends Model
     }
 
     /**
-     * relation to the working hours table
+     * Relation to the working hours table
      *
      * @return HasMany
      */

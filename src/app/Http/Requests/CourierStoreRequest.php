@@ -30,11 +30,11 @@ class CourierStoreRequest extends FormRequest
     {
         return [
             'data' => ['required', 'array'],
-            'data.*.courier_type'=>['required', Rule::in(Courier::$courierTypes), 'string'],
-            'data.*.regions'=>['required', 'array'],
-            'data.*.regions.*'=>['integer'],
-            'data.*.working_hours'=>['required', 'array'],
-            'data.*.working_hours.*'=>['string'],
+            'data.*.courier_type' => ['required', Rule::in(Courier::$courierTypes), 'string'],
+            'data.*.regions' => ['required', 'array'],
+            'data.*.regions.*' => ['integer'],
+            'data.*.working_hours' => ['required', 'array'],
+            'data.*.working_hours.*' => ['string'],
         ];
     }
 
