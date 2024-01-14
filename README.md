@@ -1,12 +1,12 @@
 **Для запуска проекта**
 
-```cp .env.example .env``` - генерируем файл .env
+```cp .env.example .env``` - в папке src генерируем файл .env
 
-```docker composer up -d``` - запуск контейнеров
+```docker-compose up -d``` - запуск контейнеров
 
-```docker-compose composer install``` - устанавка зависимостей
+```docker-compose run composer install``` - устанавка зависимостей
 
-```docker-compose artisan migrate --seed``` - устанавка миграций и запуск сидеров
+```docker-compose run artisan migrate --seed``` - устанавка миграций и запуск сидеров
 
 ---
 **Пользователь -**

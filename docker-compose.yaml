@@ -44,7 +44,7 @@ services:
       context: ./docker/composer
       dockerfile: Dockerfile
     volumes:
-      - db_data:/var/www/laravel
+      - ./src:/var/www/laravel
   artisan:
     build:
       context: ./docker/php
